@@ -1,0 +1,33 @@
+p{
+    color:red; /* property: value*/
+    background-color: aqua;
+    font-size: 100px;
+    font-style: italic;
+}
+
+div{
+    width:100px;
+    height:100px;
+    background: green;
+}
+
+#box{
+    width:100px;
+    height:100px;
+    background: rgb(233, 17, 211);
+}
+
+.box2{
+    width:100px;
+    height:100px;
+    background: rgb(140, 114, 255);
+    margin:10px; /* margin is spacing outside the box*/
+    padding:10px; /* padding is spacing inside the box*/
+    border: 2px solid red;
+    float: left; /* makes the next element be aligned instead of entered below*/
+    position: relative; /*default positioning?*/
+
+    /* position:absolute; /*this whole chunk makes the position of the thing exactly here*/
+    /* top: 0px;
+    left:0px; */ 
+}
