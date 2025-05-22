@@ -4,6 +4,7 @@ var number = 10;
 var string = 'hello there';
 var isRad = true;
 var groceries = ['Milk', 'Eggs', 'Cheese'];
+var number2 = 5;
 
 if(number == 10){
     console.log('Yes!');
@@ -26,3 +27,5 @@ function listgroceries(){
 listgroceries();
 
 document.getElementById('box').addEventListener('click', function() {alert('I got clicked');} )
+
+//update test :D
