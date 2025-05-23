@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Mominacute-Regular';
+    src: url('assets/Mominacute-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.text {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Mominacute-Regular', sans-serif;
+}
+
+.centered-image {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%; /* keeps it centered vertically */
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: auto;
+}
+
+body {
+    background-color:rgb(133, 176, 255);
+}
