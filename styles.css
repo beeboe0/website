@@ -5,7 +5,7 @@
     font-style: normal;
 }
 
-.text {
+p, li{
     position: absolute;
     top: 25%;
     left: 50%;
@@ -25,7 +25,42 @@
     height: auto;
 }
 
+.gallery {
+    display: inline-block;
+    border: 2px solid rgb(36, 97, 247);
+    margin: 5px;
+    width: 22%;
+}
+
+.gallery .caption {
+    padding: 10px;
+    text-align: center;
+}
+
+.gallery:hover {
+    border: 2px solid white;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.invisible-rectangle { /* Used for the intro for the Art Portfolio Page */
+    height: 400px;
+    width: auto;
+    background-color: transparent; /* no background */
+    border: none; /* no border */
+    display: flex; /* optional: for centering */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
 body {
     background-color:rgb(133, 176, 255);
 }
 
+p {
+
+}
