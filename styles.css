@@ -1,9 +1,9 @@
-@font-face {
+ /* @font-face {
     font-family: 'Mominacute-Regular';
     src: url('assets/Mominacute-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 p, li{
     position: absolute;
@@ -29,7 +29,7 @@ p, li{
     display: inline-block;
     border: 2px solid rgb(36, 97, 247);
     margin: 5px;
-    width: 22%;
+    width: 22%; 
 }
 
 .gallery .caption {
@@ -46,21 +46,30 @@ p, li{
     height: auto;
 }
 
-.invisible-rectangle { /* Used for the intro for the Art Portfolio Page */
-    height: 400px;
-    width: auto;
-    background-color: transparent; /* no background */
-    border: none; /* no border */
-    display: flex; /* optional: for centering */
+/* Used for the intro for the Art Portfolio Page */
+.invisible-rectangle {
+    height: 320px;
+    width: auto; 
+    background-color: transparent;
+    border: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-family: 'Mominacute-Regular', sans-serif;
   }
+  
 
 body {
     background-color:rgb(133, 176, 255);
 }
 
-p {
-
-}
+/* return button */
+.bottom-left-image {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 115px; /* optional: control size */
+    height: auto;
+    z-index: 1000; /* ensures it's on top */
+  }
