@@ -16,12 +16,12 @@
     }
 
     .container {
-      width: 600px; /* You can change this width */
+      width: 800px; /* You can change this width */
       margin: 0 auto;
       background-color: rgb(133, 176, 255);
       padding: 20px;
       box-shadow: 0 0 10px rgb(255, 169, 0);
-      min-height: 100vh; /* Makes it fill the screen if content is short */
+      /*min-height: 100vh; /* Makes it fill the screen if content is short */
     }
 
     h1, h2, h3, p, a {
@@ -44,87 +44,160 @@
       text-decoration: underline;
     }
 
-    .gallery {
-      display: inline-block;
-      margin: 5px;
-      width: 33%; 
-  }
-    
-    .gallery .caption {
-        padding: px;
-        text-align: center;
+    /* gallery */
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px;
+      background-color: #111; /* Optional background */
     }
     
-    .gallery:hover {
-        border: 2px solid white;
+    .gallery-item {
+      width: 250px;
+      background-color: #222;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease, border 0.3s ease;
     }
     
-    .gallery img {
-        width: 100%;
-        height: auto;
+    .gallery-item:hover {
+      transform: scale(1.05);
+      border: 2px solid #fff;
+    }
+    
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .caption {
+      padding: 10px;
+      color: #fff;
+      font-size: 1rem;
+    }
+    
+    .invisible-rectangle {
+      height: 320px;
+      width: auto; 
+      background-color: transparent;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: 'Mominacute-Regular', sans-serif;
+    }
+    
+    .sticker {
+      position: absolute;
+      top: 100px; /* set as needed */
+      left: 50%;
+      transform: translateX(60px); /* 60px to the right of center */
+      width: 50px; /* or however big your image is */
+      z-index: 10;
     }
   </style>
 </head>
+
 <body>
+  <div class="invisible-rectangle" style="height: 100px;">
+  </div>
 
-  <div class="container">
-    <h1>Hello! My name is Bianna :D</h1>
-    <p>Welcome to my website.</p>
-
-    <div class="links">
-      <a href="#">About</a>
-      <a href="#">Projects</a>
-      <a href="artPortfolio.html">Art Portfolio</a>
-      <a href="#">Contact</a>
+  <!-- Intro Container-->
+  <div class="container" style="height: 400px;">
+    <div class="invisible-rectangle" style="height: 30px;">
     </div>
 
-        <div class="gallery">
-            <a target="_blank" href="art/1.jpeg">
-                <img src="art/1.jpeg" width="250px">
-            </a>
-            <div class="caption"> Thing 1</div>
-        </div>
-
-        <div class="gallery">
-            <a target="_blank" href="art/2.png">
-                <img src="art/2.png" width="250px">
-            </a>
-            <div class="caption"> Thing 2</div>
-        </div>
-
-        <div class="gallery">
-            <a target="_blank" href="art/3.jpeg">
-                <img src="art/3.jpeg" width="250px">
-            </a>
-            <div class="caption"> Thing 3</div>
-        </div>
-
-        <div class="gallery">
-            <a target="_blank" href="art/4.png">
-                <img src="art/4.png" width="250px">
-            </a>
-            <div class="caption"> Thing 3</div>
-        </div>
-
-        <div class="gallery">
-            <a target="_blank" href="art/5.jpeg">
-                <img src="art/5.jpeg" width="250px">
-            </a>
-            <div class="caption"> Thing 3</div>
-        </div>
-
-        <div class="gallery">
-            <a target="_blank" href="art/6.jpeg">
-                <img src="art/6.jpeg" width="250px">
-            </a>
-            <div class="caption"> Thing 3</div>
-        </div>
-
-        <!-- A little bottom space-->
-        <div class="invisible-rectangle" style="height: 100px;">
-        </div>
+    <h1>Hello! My name is Bianna :D</h1>
+    <p>Welcome to my website.<br><br><br></p>
     <h3>Announcments:</h3>
+    <div class="gallery-container">
+      <div class="gallery-item" style="width: 800px;">
+        <div class="caption"> 
+          Currently up for hire. (Please hire me, please.) <br> <br>
+          Thank you for visiting my website.
+          
+        </div>
+      </div>
+    </div>
   </div>
+
+    <!-- Stickers start-->
+    <img src="stickers/biannaSkate.png" class="sticker" style=" width: 120px; transform: rotate(5deg) translate(-450px, 120px);">
+    <img src="stickers/speaking.png" class="sticker" style=" width: 120px; transform: rotate(15deg) translate(220px, 5px);">
+    <img src="stickers/can.gif" class="sticker" style=" width: 170px; transform: rotate(-15deg) translate(-750px, 80px);">
+    <img src="stickers/cat.png" class="sticker" style=" width: 170px; transform: rotate(0deg) translate(0px, 0px);">
+    <img src="stickers/cat2.png" class="sticker" style=" width: 170px; transform: rotate(0deg) translate(0px, 0px);">
+    <img src="stickers/circle.png" class="sticker" style=" width: 170px; transform: rotate(0deg) translate(0px, 0px);">
+    <img src="stickers/goldfish.gif" class="sticker" style=" width: 170px; transform: rotate(0deg) translate(0px, 0px);">
+    <img src="stickers/nokia.gif" class="sticker" style=" width: 170px; transform: rotate(0deg) translate(0px, 0px);">
+    <img src="stickers/paperclip.png" class="sticker" style=" width: 300px; transform: rotate(60deg) translate(-600px, px);">
+    <img src="stickers/run.gif" class="sticker" style=" width: 170px; transform: rotate(0deg) translate(-620px, 360px);">
+    <img src="stickers/skeleton.gif" class="sticker" style=" width: 170px; transform: rotate(0deg) translate(500px, 500px);">
+    <img src="stickers/totoro.png" class="sticker" style=" width: 220px; transform: rotate(-10deg) translate(-550px, 240px);">
+    <!-- Add more stickers here!!-->
+
+    <!-- Stickers end-->
+  </div>
+  <!-- End of the Intro Container -->
+
+  <div class="invisible-rectangle" style="height: 50px;">
+</div>
+
+
+  <!-- Links Conatainer-->
+<div class="container">
+  <div class="invisible-rectangle" style="height: 30px;">
+  </div>
+  <!-- gallery start -->
+  <!-- Images need to be height:1439px width: 971px when uploaded to keep uniformity-->
+  <div class="gallery-container">
+    <a href="aboutMe.html">
+      <div class="gallery-item" style="width: 240px; height: 400px;";>
+        <img src="assets/aboutMeLogo.jpg" alt="About Me Image">
+        <div class="caption">About me</div>
+      </div>
+    </a>
+
+    <a href="artPortfolio.html">
+      <div class="gallery-item" style="width: 240px; height: 400px;";>
+        <img src="art/1.jpeg" alt="Art Portfolio Logo">
+        <div class="caption">Art Portfolio</div>
+      </div>
+    </a>
+
+    <a href="contactMe.html">
+      <div class="gallery-item" style="width: 240px; height: 400px;";>
+        <img src="assets/csProjectsLogo.jpg" alt="CS Projects Logo">
+        <div class="caption">CS Projects</div>
+      </div>
+    </a>
+
+    <a href="resume.html">
+      <div class="gallery-item" style="width: 240px; height: 400px;";>
+        <img src="assets/resumeLogo.jpg" alt="Resume Logo">
+        <div class="caption">Resume</div>
+      </div>
+    </a>
+
+    <a href="contactMe.html">
+      <div class="gallery-item" style="width: 240px; height: 400px;";>
+        <img src="assets/contactMeLogo.jpg" alt="Contact Me Logo">
+        <div class="caption">Contact Me</div>
+      </div>
+    </a>
+    <!-- Add more items here -->
+  </div>
+</div>
+  <!-- Stickers end-->
+   
+<!-- End of the blue -->
+<div class="invisible-rectangle" style="height: 150px;">
+</div>
 
 </body>
 </html>
