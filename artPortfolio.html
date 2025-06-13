@@ -1,86 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bianna's Art Portfolio</title>
-    <link rel="icon" href="assets/logo.png" type="image/png" sizes="32x32">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bianna's Website!</title>
+  <link rel="icon" href="assets/logo.png" type="image/png" sizes="32x32">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- gallery intro -->
-    <div class="invisible-rectangle" style="font-size: 45px; height: 100px;"> Welcome to my Art Portfolio!
-    </div>
+  <div class="top-bar">
+    <a href="index.html">Home</a>
+    <a href="aboutMe.html">About</a>
+    <a href="artPortfolio.html">Art Portfolio</a>
+    <a href="csProjects.html">CS Projects</a>
+    <a href="resume.html">Resume</a>
+    <a href="contactMe.html">Contact</a>
+    <a href="archive.html">Archive</a>
+  </div>
 
-    <div class="invisible-rectangle" style="font-size: 25px; height: 140px;"> 
-            I work with: <br>
-            - Digital (Krita, Blender, Procreate) <br>
-            - Traditional (Mixed Media)
-    </div>
-
-    <hr style="border: none; border-top: 2px dotted black;">
-    <hr style="border: none; border-top: 2px dotted rgb(13, 11, 11);">
-
-    <!-- return button-->
-
-    <a href="index.html"> <img src="assets/return.png" alt="return button" class="bottom-left-image"> </a>
-
-    <!-- gallery -->
-    <!-- AP Studio Art-->
-    <div class="invisible-rectangle" style="height: 80px; font-size: 30px;">
-        Advanced Placement Studio Art (2022 - 2023)<br>
-    </div>
-
-    <div class="invisible-rectangle" style="height: 150px; font-size: 25px;">
-        Description<br>
-        More description
-    </div>
-
-    <div class="gallery">
-        <a target="_blank" href="art/1.jpeg">
-            <img src="art/1.jpeg" width="250px">
-        </a>
-        <div class="caption"> Thing 1</div>
-    </div>
-
-    <div class="gallery">
-        <a target="_blank" href="art/2.png">
-            <img src="art/2.png" width="250px">
-        </a>
-        <div class="caption"> Thing 2</div>
-    </div>
-
-    <div class="gallery">
-        <a target="_blank" href="art/3.jpeg">
-            <img src="art/3.jpeg" width="250px">
-        </a>
-        <div class="caption"> Thing 3</div>
-    </div>
-
-    <div class="gallery">
-        <a target="_blank" href="art/4.png">
-            <img src="art/4.png" width="250px">
-        </a>
-        <div class="caption"> Thing 3</div>
-    </div>
-
-    <div class="gallery">
-        <a target="_blank" href="art/5.jpeg">
-            <img src="art/5.jpeg" width="250px">
-        </a>
-        <div class="caption"> Thing 3</div>
-    </div>
-
-    <div class="gallery">
-        <a target="_blank" href="art/6.jpeg">
-            <img src="art/6.jpeg" width="250px">
-        </a>
-        <div class="caption"> Thing 3</div>
-    </div>
-
-    <!-- A little bottome space for the return button to not block anything-->
+  <div class="content">
     <div class="invisible-rectangle" style="height: 100px;">
     </div>
+  
+    <!-- Intro Container-->
+    <div class="container" style="height: 200px;">
+      <h1> Art Portfolio</h1>
+      <div class="gallery-container">
+        <div class="gallery-item" style="width: 800px;">
+          <div class="caption"> 
+            Please scroll to view gallery. <br><br>
+            Click on image to see full image on a seperate tab.
+            
+          </div>
+        </div>
+      </div>
+  
+      <!-- Stickers start-->
+      <img src="stickers/biannaSkate.png" class="sticker" style=" width: 120px; transform: rotate(5deg) translate(-490px, 120px);">
+      <img src="stickers/speaking.png" class="sticker" style=" width: 120px; transform: rotate(15deg) translate(400px, -40px);">
+      <img src="stickers/can.gif" class="sticker" style=" width: 170px; transform: rotate(-15deg) translate(-750px, 80px);">
+      <img src="stickers/cat.png" class="sticker" style=" width: 170px; transform: rotate(0deg) translate(150px, -80px);">
+      <img src="stickers/cat2.png" class="sticker" style=" width: 170px; transform: rotate(-5deg) translate(530px, -20px);"> <!-- The blue 3d one-->
+      <img src="stickers/circle.png" class="sticker" style=" width: 170px; transform: rotate(5deg) translate(570px, 200px);">
+      <img src="stickers/nokia.gif" class="sticker" style=" width: 200px; transform: rotate(0deg) translate(380px, 380px);">
+      <img src="stickers/paperclip.png" class="sticker" style=" width: 330px; transform: rotate(-20deg) translate(-650px, -320px);">
+      <img src="stickers/totoro.png" class="sticker" style=" width: 220px; transform: rotate(-10deg) translate(-700px, 330px);">
+      <!-- Add more stickers here!!-->
+  
+      <!-- Stickers end-->
+    </div>
+    <!-- End of the Intro Container -->
+  
+    <!-- AP Studio Art-->
+    <div class="content">
+        <div class="invisible-rectangle" style="height: 50px;">
+        </div>
+    
+        <div class="container" style="height: 630px;">
+        <h1> Advanced Placement Studio Art 2022-2023</h1>
+        <div class="gallery-container">
+            <div class="gallery-item" style="width: 800px;">
+              <div class="caption" style="text-align: left;"> 
+                Insert more about this later.
+                <br><br>
+                <a href="https://docs.google.com/presentation/d/1g8cLUP6cv0LxD6bsMx3XYAIVEUx6BtGVZuWsFZ84V6w/edit?usp=sharing" target="_blank">Link to Process Slides</a>
+                
+              </div>
+        </div>
+        
+        <div class="scroll-gallery">
+            <figure>
+                <a target="_blank" href="art/1.jpeg">
+                    <img src="art/1.jpeg">
+                </a>
+                <figcaption style="text-align: center;">View from Korea</figcaption>
+                </figure>
+            <figure>
+            <a target="_blank" href="art/2.png">
+                <img src="art/2.png">
+            </a>
+            <figcaption style="text-align: center;">What it Means to be Moved, To be Inspired</figcaption>
+                </figure>
+            <figure>
+                <a target="_blank" href="art/3.jpeg">
+                    <img src="art/3.jpeg">
+                </a>
+                <figcaption style="text-align: center;">Together With You</figcaption>
+            </figure>
+            <figure>
+                <a target="_blank" href="art/4.png">
+                    <img src="art/4.png">
+                </a>
+                <figcaption style="text-align: center;">When You Let Your Heart Flow</figcaption>
+            </figure>
+            <figure>
+                <a target="_blank" href="art/5.jpeg">
+                    <img src="art/5.jpeg">
+                </a>
+                <figcaption style="text-align: center;">Alone Through Space</figcaption>
+            </figure>
+            <figure>
+                <a target="_blank" href="art/6.jpeg">
+                    <img src="art/6.jpeg">
+                </a>
+                <figcaption style="text-align: center;">Escapism Through Media</figcaption>
+            </figure>
+            <!-- Add more images here-->
+        </div>
+
+    </div>
+    <!-- End of AP Studio Art -->
+  
+    <div class="invisible-rectangle" style="height: 100px;">
+    </div>
+  </div>
+
 </body>
 </html>

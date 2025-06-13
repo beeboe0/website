@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;  
+    background-image: url("assets/sparkles.gif");
+    background-repeat: repeat; /* or 'no-repeat' or 'repeat-x' depending on what you want */
+    background-size: auto;     /* or 'cover' or 'contain' */
+    background-attachment: fixed; /* makes it stay put while scrolling */
+  }
+
+  .container {
+    width: 800px; /* You can change this width */
+    margin: 0 auto;
+    background-color: rgb(133, 176, 255);
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(255, 169, 0);
+    /*min-height: 100vh; /* Makes it fill the screen if content is short */
+  }
+
+  h1, h2, h3, p, a {
+    text-align: center;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* gallery */
+  .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: #111; /* Optional background */
+  }
+  
+  .gallery-item {
+    width: 250px;
+    background-color: #222;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, border 0.3s ease;
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.05);
+    border: 2px solid #fff;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .caption {
+    padding: 10px;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .invisible-rectangle {
+    height: 320px;
+    width: auto; 
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Mominacute-Regular', sans-serif;
+  }
+  
+  .sticker {
+    position: absolute;
+    top: 100px; /* set as needed */
+    left: 50%;
+    transform: translateX(60px); /* 60px to the right of center */
+    width: 50px; /* or however big your image is */
+    z-index: 10;
+  }
+
+  /* top bar */
+  body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+
+  /* Sticky top bar */
+  .top-bar {
+    position: fixed; /* Makes it stick */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    display: flex;
+    gap: 1em;
+    z-index: 1000; /* Keeps it above other content */
+  }
+
+  .top-bar a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .top-bar a:hover {
+    text-decoration: underline;
+  }
+
+  /* Image gallery horizontal scroll thing */
+  .scroll-gallery {
+    display: flex;
+    overflow-x: auto; /* enables horizontal scrolling */
+    gap: 0px;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory; /* optional smooth snap */
+  }
+
+  .scroll-gallery::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .scroll-gallery::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 4px;
+  }
+
+  .scroll-gallery img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    scroll-snap-align: start;
+    flex-shrink: 0; /* prevents images from shrinking */
+  }
+
+  figcaption {
+    margin-top: 1em;
+    color: white;
+  }

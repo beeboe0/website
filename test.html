@@ -1,167 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bianna's Website!</title>
-  <link rel="icon" href="assets/logo.png" type="image/png" sizes="32x32">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;  
-      background-image: url("assets/sparkles.gif");
-      background-repeat: repeat; /* or 'no-repeat' or 'repeat-x' depending on what you want */
-      background-size: auto;     /* or 'cover' or 'contain' */
-      background-attachment: fixed; /* makes it stay put while scrolling */
-    }
-
-    .container {
-      width: 800px; /* You can change this width */
-      margin: 0 auto;
-      background-color: rgb(133, 176, 255);
-      padding: 20px;
-      box-shadow: 0 0 10px rgb(255, 169, 0);
-      /*min-height: 100vh; /* Makes it fill the screen if content is short */
-    }
-
-    h1, h2, h3, p, a {
-      text-align: center;
-    }
-
-    .links {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      align-items: center;
-    }
-
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* gallery */
-    .gallery-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      padding: 20px;
-      background-color: #111; /* Optional background */
-    }
-    
-    .gallery-item {
-      width: 250px;
-      background-color: #222;
-      border-radius: 8px;
-      overflow: hidden;
-      text-align: center;
-      transition: transform 0.3s ease, border 0.3s ease;
-    }
-    
-    .gallery-item:hover {
-      transform: scale(1.05);
-      border: 2px solid #fff;
-    }
-    
-    .gallery-item img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    
-    .caption {
-      padding: 10px;
-      color: #fff;
-      font-size: 1rem;
-    }
-    
-    .invisible-rectangle {
-      height: 320px;
-      width: auto; 
-      background-color: transparent;
-      border: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      font-family: 'Mominacute-Regular', sans-serif;
-    }
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bianna's Art Portfolio</title>
+    <link rel="icon" href="assets/logo.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <div class="invisible-rectangle" style="height: 100px;">
-  </div>
 
-  <!-- Blue start -->
-  <div class="container" style="height: 300px;">
-    <div class="invisible-rectangle" style="height: 30px;">
+    <!-- gallery intro -->
+    <div class="invisible-rectangle" style="font-size: 45px; height: 100px;"> Welcome to my Art Portfolio!
     </div>
 
-    <h1>Hello! My name is Bianna :D</h1>
-    <p>Welcome to my website.</p>
-    <h3>Announcments:</h3>
-  </div>
-
-    <!-- Stickers start-->
-     <div style="  position: absolute;
-        top: 100px; /* set as needed */
-        left: 50%;
-        transform: translateX(60px); /* 60px to the right of center */
-        width: 50px; /* or however big your image is */
-        z-index: 10;" >
-
-        <img src="assets/biannaSkate.png" alt="Thing 1" style=" width: 110px; transform: rotate(5deg) translate(-500px, 200px);">
-        <!-- Add more stickers here!!-->
+    <div class="invisible-rectangle" style="font-size: 25px; height: 140px;"> 
+            I work with: <br>
+            - Digital (Krita, Blender, Procreate) <br>
+            - Traditional (Mixed Media)
     </div>
-    <!-- Stickers end-->
-  </div>
 
+    <hr style="border: none; border-top: 2px dotted black;">
+    <hr style="border: none; border-top: 2px dotted rgb(13, 11, 11);">
 
-  <!-- new thing-->
-  <div class="invisible-rectangle" style="height: 50px;">
-</div>
+    <!-- return button-->
 
-<!-- Blue start -->
-<div class="container">
-  <div class="invisible-rectangle" style="height: 30px;">
-  </div>
-  <!-- gallery start -->
-  <div class="gallery-container">
-    <div class="gallery-item" style="width: 240px; height: 400px;";>
-      <img src="art/1.jpeg" alt="Thing 1">
-      <div class="caption">Thing 1</div>
-    </div>
-    <div class="gallery-item" style="width: 240px; height: 400px;";>
-      <img src="art/1.jpeg" alt="Thing 1">
-      <div class="caption">Thing 1</div>
-    </div>
-    <div class="gallery-item" style="width: 240px; height: 400px;";>
-      <img src="art/1.jpeg" alt="Thing 1">
-      <div class="caption">Thing 1</div>
-    </div>
-    <div class="gallery-item" style="width: 240px; height: 400px;";>
-      <img src="art/1.jpeg" alt="Thing 1">
-      <div class="caption">Thing 1</div>
-    </div>
-    <div class="gallery-item" style="width: 240px; height: 400px;";>
-      <img src="art/1.jpeg" alt="Thing 1">
-      <div class="caption">Thing 1</div>
-    </div>
-    <!-- Add more items here -->
-  </div>
-  </div>
-  <!-- Stickers end-->
-   
-<!-- End of the blue -->
-<div class="invisible-rectangle" style="height: 150px;">
-</div>
+    <a href="index.html"> <img src="assets/return.png" alt="return button" class="bottom-left-image"> </a>
 
+    <!-- gallery -->
+    <!-- AP Studio Art-->
+    <div class="invisible-rectangle" style="height: 80px; font-size: 30px;">
+        Advanced Placement Studio Art (2022 - 2023)<br>
+    </div>
+
+    <div class="invisible-rectangle" style="height: 150px; font-size: 25px;">
+        Description<br>
+        More description
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="art/1.jpeg">
+            <img src="art/1.jpeg" width="250px">
+        </a>
+        <div class="caption"> Thing 1</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="art/2.png">
+            <img src="art/2.png" width="250px">
+        </a>
+        <div class="caption"> Thing 2</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="art/3.jpeg">
+            <img src="art/3.jpeg" width="250px">
+        </a>
+        <div class="caption"> Thing 3</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="art/4.png">
+            <img src="art/4.png" width="250px">
+        </a>
+        <div class="caption"> Thing 3</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="art/5.jpeg">
+            <img src="art/5.jpeg" width="250px">
+        </a>
+        <div class="caption"> Thing 3</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="art/6.jpeg">
+            <img src="art/6.jpeg" width="250px">
+        </a>
+        <div class="caption"> Thing 3</div>
+    </div>
+
+    <!-- A little bottome space for the return button to not block anything-->
+    <div class="invisible-rectangle" style="height: 100px;">
+    </div>
 </body>
 </html>

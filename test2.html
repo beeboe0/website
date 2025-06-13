@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Horizontal Scroll Gallery</title>
+  <style>
+
+    .scroll-gallery {
+      display: flex;
+      overflow-x: auto; /* enables horizontal scrolling */
+      gap: 20px;
+      padding-bottom: 10px;
+      scroll-snap-type: x mandatory; /* optional smooth snap */
+    }
+
+    .scroll-gallery::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .scroll-gallery::-webkit-scrollbar-thumb {
+      background: #999;
+      border-radius: 4px;
+    }
+
+    .scroll-gallery img {
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      scroll-snap-align: start;
+      flex-shrink: 0; /* prevents images from shrinking */
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Side-Scrolling Image Gallery</h2>
+
+  <div class="scroll-gallery">
+    <img src="assets/logo.png" alt="Image 1">
+    <img src="assets/logo.png" alt="Image 1">
+    <img src="assets/logo.png" alt="Image 1">
+    <img src="assets/logo.png" alt="Image 1">
+    <img src="assets/logo.png" alt="Image 1">
+    <img src="assets/logo.png" alt="Image 1">
+    <img src="assets/logo.png" alt="Image 1">
+    <img src="assets/logo.png" alt="Image 1">
+    <img src="assets/logo.png" alt="Image 1">
+    <img src="assets/logo.png" alt="Image 1">
+    <img src="assets/logo.png" alt="Image 1">
+    <img src="assets/resumeLogo.jpg" alt="Image 1">
+    <img src="art/4.png" alt="Image 1">
+  </div>
+
+</body>
+</html>
