@@ -152,3 +152,43 @@ body {
     margin-top: 1em;
     color: white;
   }
+
+  /* link preview code */
+  .link-preview {
+    display: flex;
+    flex-direction: row;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    font-family: sans-serif;
+  }
+
+  .link-preview img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .link-content {
+    padding: 10px;
+  }
+
+  .link-title {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  .link-description {
+    color: #555;
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
+
+  .link-url {
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: #0073e6;
+  }
